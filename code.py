@@ -10,7 +10,7 @@ from adafruit_hx711.analog_in import AnalogIn
 data = digitalio.DigitalInOut(board.D5)
 data.direction = digitalio.Direction.INPUT
 clock = digitalio.DigitalInPut(board.D6)
-clock.direction = digitalio..Direction.OUTPUT
+clock.direction = digitalio.Direction.OUTPUT
 
 hx711 = HX711(data, clock)
 channel_a = AnalogIn(hx711, HX711.CHAN_A_GAIN_128)
